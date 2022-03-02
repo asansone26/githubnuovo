@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Creare due riquadri di dimensione qualsiasi, la disposizione non è importante.
+    Il primo riquadro deve avere colore di sfondo bianco, mentre il secondo riquadro deve avere un colore di
+    sfondo nero.
+    Utilizzare l’evento onMouseOver per cambiare il colore del primo riquadro in verde e quello del secondo in
+    rosso.
+
+    NB: se il cursore del mouse non è sul riquadro, questo deve tornare al suo stato di partenza.
+    <div>
+
+        <input type="button" id="riquadro 1" onmouseover="mousesopra()" onmouseout="mousevia()"><br>
+        <input type="button" id="riquadro 2" onmouseover="mousesopra2()" onmouseout="mousevia2()"><br>
+    </div>
+    <script>
+        document.getElementById("riquadro 1").style.backgroundColor = "white";
+        document.getElementById("riquadro 2").style.backgroundColor = "black";
+
+        function mousesopra() {
+            document.getElementById("riquadro 1").style.backgroundColor = "green";
+
+        }
+        function mousesopra2() {
+            document.getElementById("riquadro 2").style.backgroundColor = "red";
+        }
+
+        function mousevia() {
+            document.getElementById("riquadro 1").style.backgroundColor = "white";
+
+
+        }
+        function mousevia2() {
+            document.getElementById("riquadro 2").style.backgroundColor = "black";
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

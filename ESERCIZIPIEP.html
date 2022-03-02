@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    Creare un campo di testo ed un bottone. Alla pressione del bottone, deve essere validato l’input
+    inserito nel campo, restituendo il messaggio ‘Input valido’ (colore blu) se è un numero da 1 a 100,
+    ‘Input non valido’ (colore rosso) in tutti gli altri casi.
+
+    <h2>Radio Buttons</h2>
+
+    <p class="class-test" name="form-name">Choose your favorite Web language:</p>
+    <p id="paragraph-test" name="form-name">paragrafo testo</p>
+
+    <form id="form-id" name="form-name">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input id="value" type=”text” placeholder="inserisci il numero" name="testo"><br>
+    </form>
+
+    <p>
+        
+        <button type="button" onclick="validatore()">inserisci qui</button>
+    </p>
+    <p id="inputs"></p>
+
+
+
+    <script>/*
+
+    document.write("Hello");
+    document.getElementById("form-id");
+    document.getElementById("form-id").innerHTML= "hello";
+    document.getElementsByTagName("form-name");
+    document.getElementsByClassName("class-test");
+
+    document.getElementById("paragraph-test").innerHTML;*/
+
+    
+        function validatore() {
+            var testoValidato = new Text("inserisci");
+            document.getElementById("value");
+
+            var x= document.forms["form-name"]["testo"].value;
+            if(x<1){
+                document.getElementById("inputs").innerHTML= "input non valido";
+                document.getElementById("inputs").style.color= "red";
+
+            }
+            else if(x>100){
+                document.getElementById("inputs").innerHTML= "input non valido";
+                document.getElementById("inputs").style.color= "red";
+                
+            }
+            else{
+                document.getElementById("inputs").innerHTML= "input valido";
+                document.getElementById("inputs").style.color= "blue";
+                
+            }
+
+
+
+            
+
+            
+            
+        }
+    </script>
+</body>
+
+</html>
